@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bangalore Thindies | South Indian Food</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#fff9ef;color:#201712;line-height:1.55}
+header{padding:16px 6%;display:flex;justify-content:space-between;align-items:center;background:#fffdf9;position:sticky;top:0;z-index:5;border-bottom:1px solid #eadfd2}
+.logo{font-size:23px;font-weight:900;color:#174b38}nav a{margin-left:18px;color:#201712;text-decoration:none;font-weight:bold}
+.hero{min-height:72vh;display:grid;place-items:center;text-align:center;color:white;padding:50px 7%;background:linear-gradient(#10271eaa,#10271eaa),url('https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=1800&q=85') center/cover}
+.hero h1{font-size:clamp(45px,8vw,80px);line-height:1;margin:12px 0}.hero p{font-size:19px;max-width:650px;margin:20px auto}
+.btn{display:inline-block;background:#174b38;color:white;padding:13px 20px;border-radius:10px;text-decoration:none;font-weight:bold;margin:5px}.gold{background:#d99a32;color:#201712}
+section{max-width:1100px;margin:auto;padding:65px 6%}h2{text-align:center;font-size:36px;margin:0 0 12px}.sub{text-align:center;color:#75695f;max-width:700px;margin:0 auto 30px}
+.cards,.menu,.contact{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card,.dish{background:white;border:1px solid #eee1d4;border-radius:15px;padding:22px}.dish{display:flex;gap:14px;align-items:center}.dish img{width:95px;height:80px;object-fit:cover;border-radius:10px}.dish p{color:#75695f;font-size:14px}.menu{grid-template-columns:repeat(2,1fr)}
+.gallery{display:grid;grid-template-columns:2fr 1fr 1fr;gap:12px}.gallery img{width:100%;height:220px;object-fit:cover;border-radius:14px}.gallery img:first-child{height:452px;grid-row:span 2}
+.contact{grid-template-columns:1fr 1fr}.map{width:100%;height:330px;border:0;border-radius:15px}.note{background:#fff0cf;padding:15px;border-left:5px solid #d99a32;margin-top:20px}
+footer{text-align:center;background:#201712;color:white;padding:30px}
+@media(max-width:700px){nav{display:none}.cards,.menu,.contact,.gallery{grid-template-columns:1fr}.gallery img:first-child{height:220px;grid-row:auto}}
+</style></head>
+<body>
+<header><div class="logo">Bangalore Thindies</div><nav><a href="#menu">Menu</a><a href="#photos">Photos</a><a href="#booking">Book a Table</a><a href="#visit">Visit</a><a href="#contact">Contact</a></nav></header>
+<section class="hero"><div><div>AUTHENTIC SOUTH INDIAN • VEGETARIAN</div><h1>Simple food.<br>Proper thindies.</h1><p>Fresh, comforting South Indian favourites — from crispy dosa and soft idli to vada and filter coffee.</p><a class="btn gold" href="#menu">Explore Menu</a><a class="btn" href="tel:+919591541023">Call Us</a></div></section>
+
+<section id="menu"><h2>Popular Picks</h2><p class="sub">Items are based on current online listings. Prices are omitted until the restaurant confirms its latest menu.</p>
+<div class="menu">
+<div class="dish"><img src="https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=400&q=80"><div><h3>Pudi Masala Dosa</h3><p>Crispy dosa with spiced potato filling.</p></div></div>
+<div class="dish"><img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=400&q=80"><div><h3>Idli & Vada</h3><p>Classic breakfast with chutney and sambar.</p></div></div>
+<div class="dish"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=400&q=80"><div><h3>Vada</h3><p>Crispy South Indian snack.</p></div></div>
+<div class="dish"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&q=80"><div><h3>Filter Coffee</h3><p>A classic South Indian coffee.</p></div></div>
+</div><div class="note">Demo note: the complete menu and prices can be added after the restaurant approves the website.</div></section>
+<section id="photos"><h2>Food & Atmosphere</h2><p class="sub">These are illustrative food photos. For the final client site, use photos supplied or approved by the restaurant.</p>
+<div class="gallery"><img src="https://images.unsplash.com/photo-1589301760014-d929f3979dbc?auto=format&fit=crop&w=1000&q=85"><img src="https://images.unsplash.com/photo-1630383249896-424e482df921?auto=format&fit=crop&w=700&q=85"><img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=700&q=85"><img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=700&q=85"></div></section>
+
+<section id="booking">
+<h2>Book a Table</h2>
+<p class="sub">Choose your preferred date, time and number of guests. This demo sends the booking request to WhatsApp.</p>
+<div class="card" style="max-width:650px;margin:auto">
+<form id="bookingForm">
+<label><b>Name</b></label><input id="bname" required placeholder="Your name" style="width:100%;padding:13px;margin:7px 0 14px;border:1px solid #ddd;border-radius:8px">
+<label><b>Phone</b></label><input id="bphone" type="tel" required placeholder="+91..." style="width:100%;padding:13px;margin:7px 0 14px;border:1px solid #ddd;border-radius:8px">
+<label><b>Date</b></label><input id="bdate" type="date" required style="width:100%;padding:13px;margin:7px 0 14px;border:1px solid #ddd;border-radius:8px">
+<label><b>Time</b></label><input id="btime" type="time" required style="width:100%;padding:13px;margin:7px 0 14px;border:1px solid #ddd;border-radius:8px">
+<label><b>Guests</b></label><select id="bguests" style="width:100%;padding:13px;margin:7px 0 18px;border:1px solid #ddd;border-radius:8px">
+<option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7+</option>
+</select>
+<button class="btn" type="submit">Request Booking</button>
+<p id="bookingMsg" style="display:none;color:#174b38;font-weight:bold;margin-top:15px">Opening WhatsApp with your booking request…</p>
+</form>
+</div>
+</section>
+<section id="visit"><h2>Visit Us</h2><p class="sub">Infantry Road outlet</p><div class="contact"><div class="card"><h3>📍 Address</h3><p>9, Ganesh Bagh, Bhagwan Mahaveer Marg, Infantry Road, Bengaluru</p><h3>📞 +91 95915 41023</h3><p>South Indian • Vegetarian • Breakfast • Takeaway</p><a class="btn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Bangalore%20Thindies%2C%209%20Ganesh%20Bagh%2C%20Infantry%20Road%2C%20Bengaluru">Get Directions</a></div><iframe class="map" src="https://www.google.com/maps?q=Bangalore%20Thindies%2C%209%20Ganesh%20Bagh%2C%20Infantry%20Road%2C%20Bengaluru&output=embed" loading="lazy"></iframe></div></section>
+<section id="contact"><h2>Contact Bangalore Thindies</h2><p class="sub">Questions about the menu or outlet?</p><div style="text-align:center"><a class="btn" href="tel:+919591541023">📞 Call</a><a class="btn gold" target="_blank" href="https://wa.me/919591541023">WhatsApp</a></div></section>
+<footer><b>Bangalore Thindies</b><p>Sample website concept — not the official website.</p></footer>
+
+<script>
+document.getElementById('bookingForm').addEventListener('submit',function(e){
+ e.preventDefault();
+ const text =
+ 'Hello Bangalore Thindies! I would like to book a table.%0A' +
+ 'Name: '+encodeURIComponent(document.getElementById('bname').value)+'%0A' +
+ 'Phone: '+encodeURIComponent(document.getElementById('bphone').value)+'%0A' +
+ 'Date: '+encodeURIComponent(document.getElementById('bdate').value)+'%0A' +
+ 'Time: '+encodeURIComponent(document.getElementById('btime').value)+'%0A' +
+ 'Guests: '+encodeURIComponent(document.getElementById('bguests').value);
+ document.getElementById('bookingMsg').style.display='block';
+ window.open('https://wa.me/919591541023?text='+text,'_blank');
+});
+</script>
+</body></html>
